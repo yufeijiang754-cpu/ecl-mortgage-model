@@ -1,0 +1,125 @@
+{
+  "pd": {
+    "train_rows": 268213,
+    "logistic": {
+      "in_time_holdout": {
+        "auc_default": 0.8963,
+        "auc_prepay": 0.6879,
+        "pred_default_rate": 0.0173,
+        "actual_default_rate": 0.0172,
+        "n": 229193
+      },
+      "out_of_time_2016plus": {
+        "auc_default": 0.8703,
+        "auc_prepay": 0.6747,
+        "pred_default_rate": 0.006,
+        "actual_default_rate": 0.0074,
+        "n": 322368
+      }
+    },
+    "gbm_challenger": {
+      "in_time_holdout": {
+        "auc_default": 0.8947,
+        "auc_prepay": 0.7093,
+        "pred_default_rate": 0.0175,
+        "actual_default_rate": 0.0172,
+        "n": 229193
+      },
+      "out_of_time_2016plus": {
+        "auc_default": 0.7771,
+        "auc_prepay": 0.6499,
+        "pred_default_rate": 0.0223,
+        "actual_default_rate": 0.0074,
+        "n": 322368
+      }
+    }
+  },
+  "lgd": {
+    "resolved_defaults": 14237,
+    "mean_lgd": 0.256,
+    "cure_share": 0.5032,
+    "gbm": {
+      "rmse": 0.2746,
+      "mae": 0.2047,
+      "mean_pred": 0.2546,
+      "mean_actual": 0.2556
+    },
+    "linear": {
+      "rmse": 0.2757,
+      "mae": 0.2159,
+      "mean_pred": 0.2602,
+      "mean_actual": 0.2556
+    }
+  },
+  "ecl_2026_06": {
+    "loans": 24837,
+    "ead_musd": 2828.1,
+    "ecl_weighted_musd": 3.252,
+    "coverage_bps": 11.5,
+    "coverage_bps_by_scenario": {
+      "Baseline": 5.4,
+      "Upside": 2.3,
+      "Severe": 27.7
+    },
+    "stage_mix": {
+      "1": {
+        "loans": 23508,
+        "ead_share": 0.9479,
+        "coverage_pct": 0.034
+      },
+      "2": {
+        "loans": 1105,
+        "ead_share": 0.0405,
+        "coverage_pct": 0.822
+      },
+      "3": {
+        "loans": 224,
+        "ead_share": 0.0116,
+        "coverage_pct": 4.305
+      }
+    },
+    "weights": {
+      "Baseline": 0.5,
+      "Upside": 0.2,
+      "Severe": 0.3
+    }
+  },
+  "backtest_2007_vintage": {
+    "loans": 42394,
+    "upb_musd": 7565.1,
+    "actual_cum_loss_rate_pct": 4.157,
+    "actual_lifetime_default_rate_pct": 16.68,
+    "pred_lifetime_loss_rate_pct": {
+      "Dec-2007 baseline (illustrative)": 0.951,
+      "Realized macro": 3.074,
+      "Severe": 5.269
+    },
+    "pred_lifetime_pd_pct": {
+      "Dec-2007 baseline (illustrative)": 7.15,
+      "Realized macro": 9.85,
+      "Severe": 17.28
+    },
+    "one_year_pd_2008_2012": {
+      "2007": {
+        "pred_pct": 1.43,
+        "actual_pct": 1.96
+      },
+      "2008": {
+        "pred_pct": 4.12,
+        "actual_pct": 5.4
+      },
+      "2009": {
+        "pred_pct": 4.67,
+        "actual_pct": 5.48
+      },
+      "2010": {
+        "pred_pct": 4.82,
+        "actual_pct": 4.56
+      },
+      "2011": {
+        "pred_pct": 4.36,
+        "actual_pct": 3.95
+      }
+    }
+  }
+}

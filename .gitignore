@@ -1,0 +1,6 @@
+data/
+docs/
+outputs/ecl_2026_loan_level.csv
+outputs/run.log
+__pycache__/
+.DS_Store
